@@ -1,0 +1,8 @@
+﻿<div>
+   <h2>Vehicle</h2>
+   <h3 data-bind="text: vehicle.name"></h3>
+   
+   <ul data-bind="foreach: vehicles">
+      <li data-bind="text: name, click: function () { $parent.selectVehicle($data) }"></li>
+   </ul>
+</div>
