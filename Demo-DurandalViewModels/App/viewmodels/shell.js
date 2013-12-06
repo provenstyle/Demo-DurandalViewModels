@@ -13,7 +13,8 @@
                 { route: 'constructor', moduleId: 'viewmodels/constructor', nav: true },
                 { route: 'prototype', moduleId: 'viewmodels/prototype', nav: true },
                 { route: 'revealingPrototype', moduleId: 'viewmodels/revealingPrototype', nav: true },
-                { route: 'revealingModule', moduleId: 'viewmodels/revealingModule', nav: true }
+                { route: 'revealingModule', moduleId: 'viewmodels/revealingModule', nav: true },
+                { route: 'revealingModuleWithObservables', moduleId: 'viewmodels/revealingModuleWithObservables', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();

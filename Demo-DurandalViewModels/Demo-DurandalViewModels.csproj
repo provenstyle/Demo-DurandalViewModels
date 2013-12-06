@@ -139,12 +139,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\main.js" />
+    <Content Include="App\viewmodels\revealingModuleWithObservables.js" />
     <Content Include="App\viewmodels\revealingModule.js" />
     <Content Include="App\viewmodels\revealingPrototype.js" />
     <Content Include="App\viewmodels\prototype.js" />
     <Content Include="App\viewmodels\singleton.js" />
     <Content Include="App\viewmodels\constructor.js" />
     <Content Include="App\views\revealingModule.html" />
+    <Content Include="App\views\revealingModuleWithObservables.html" />
     <Content Include="App\views\revealingPrototype.html" />
     <Content Include="App\views\prototype.html" />
     <Content Include="App\views\constructor.html" />
