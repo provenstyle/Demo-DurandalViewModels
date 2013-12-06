@@ -1,6 +1,6 @@
-﻿define(['plugins/observable'], function(observable) {
+﻿define(function() {
 
-   var vm = function() {
+   var vm = function () {
       var self = this;
       self.vehicles = [
          { name: "charger" },
@@ -10,8 +10,8 @@
       self.vehicle = self.vehicles[0];
       self.selectVehicle = function(vehicle) {
          self.vehicle = vehicle;
-      };
-   };
+      };      
+   }; 
 
    return vm;
 });

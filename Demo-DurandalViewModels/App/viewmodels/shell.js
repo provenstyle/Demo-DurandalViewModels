@@ -9,9 +9,11 @@
         activate: function () {
             router.map([
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
-                { route: 'vehicleVm', moduleId: 'viewmodels/vehicleVm', nav: true },
-                { route: 'vehicleSelf', moduleId: 'viewmodels/vehicleSelf', nav: true },
-                { route: 'vehiclePrototype', moduleId: 'viewmodels/vehiclePrototype', nav: true }
+                { route: 'singleton', moduleId: 'viewmodels/singleton', nav: true },
+                { route: 'constructor', moduleId: 'viewmodels/constructor', nav: true },
+                { route: 'prototype', moduleId: 'viewmodels/prototype', nav: true },
+                { route: 'revealingPrototype', moduleId: 'viewmodels/revealingPrototype', nav: true },
+                { route: 'revealingModule', moduleId: 'viewmodels/revealingModule', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();

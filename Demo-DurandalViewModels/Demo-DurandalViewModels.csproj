@@ -139,12 +139,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\main.js" />
-    <Content Include="App\viewmodels\vehiclePrototype.js" />
-    <Content Include="App\viewmodels\vehicleVm.js" />
-    <Content Include="App\viewmodels\vehicleSelf.js" />
-    <Content Include="App\views\vehiclePrototype.html" />
-    <Content Include="App\views\vehicleSelf.html" />
-    <Content Include="App\views\vehicleVm.html" />
+    <Content Include="App\viewmodels\revealingModule.js" />
+    <Content Include="App\viewmodels\revealingPrototype.js" />
+    <Content Include="App\viewmodels\prototype.js" />
+    <Content Include="App\viewmodels\singleton.js" />
+    <Content Include="App\viewmodels\constructor.js" />
+    <Content Include="App\views\revealingModule.html" />
+    <Content Include="App\views\revealingPrototype.html" />
+    <Content Include="App\views\prototype.html" />
+    <Content Include="App\views\constructor.html" />
+    <Content Include="App\views\singleton.html" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\welcome.js" />
     <Content Include="App\views\detail.html" />

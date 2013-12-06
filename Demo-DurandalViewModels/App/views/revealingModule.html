@@ -1,0 +1,15 @@
+﻿<div>
+   <h2>Vehicle</h2>
+   
+   <hr/>
+   <blockquote>
+      This example will not work because the revealing module pattern does not work with the observable plugin.
+   </blockquote>
+   <hr/>
+
+   <h3 data-bind="text: vehicle.name"></h3>
+   
+   <ul data-bind="foreach: vehicles">
+      <li data-bind="text: name, click: $parent.selectVehicle"></li>
+   </ul>
+</div>

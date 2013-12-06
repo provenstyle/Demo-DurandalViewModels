@@ -1,13 +1,15 @@
 ﻿<section>
-   <h2>Building javaScript View Models</h2>
+   <h2>Building Durandal View Models</h2>
    <blockquote>
       There are many different ways to create objects in javaScript but which one is best when you are creating your durandal viewModels?
    </blockquote>
+   
+   <h3>My favorite is the revealing module pattern but...</h3>
 
    <h3>The observable plugin does not work with the revealing module pattern</h3>
    <ul>
       <li>The main reason it does not work is that the revealing module pattern returns an object literal</li>
-      <li>It is the properties of the object literal that are made observable not the variables inside modules closure</li>
+      <li>It is the properties of the object literal that are made observable not the variables inside the modules closure</li>
       <li>Variables in the modules closure become the values of the observable and not the observables themself</li>
       <li>Functions inside the module continue to modify the variables inside the observable, but the updates do not go throught the observables themselves
          therefore anything bound to the view model does not get updated.
@@ -16,9 +18,27 @@
 
    <h3>Patterns that do work</h3>
    <ul>
-      <li>Single object</li>
-      <li>A constructor function with self = this</li>
-      <li>Prototype Pattern</li>
-      <li>Revealing Prototype Pattern</li>
+      <li>Module Pattern (Singleton Object)</li>
+      <li>Constructor Function with self = this
+         <ul>
+            <li>you have to use self = this because the context of "this" changes with the ko foreach binding</li>
+            <li>if you don't want to use self = this you have to use functions in your click bindings while in the middle of your foreach loops</li>
+            <li>without self = this you have to be careful of the value of "this" in nested function calls</li>
+         </ul>
+      </li>
+      <li>Prototype Pattern and Revealing Prototype Pattern
+         <ul>
+            <li>Both patterns work</li>
+            <li>You have to use functions in your foreach bindings for click handling so you don't mess up the "this" context in your prototype</li>
+         </ul>
+      </li>      
    </ul>
+   
+   <h3>Conclusion</h3>
+   <ul>
+      <li>I will primarily use the Module Pattern and the Constructor Function with self = this. When I have a senario with many instances of the 
+         same view being created then I will mess with the prototype patterns.</li>
+      <li>Choose the Module Pattern when you want the state of your view to be preserved between page navigations.</li>
+      <li>Choose the constructor function when you want a new viewModel every time you visit the page.</li>
+   </ul>   
 </section>
