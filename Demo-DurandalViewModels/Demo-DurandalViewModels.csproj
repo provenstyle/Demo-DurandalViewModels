@@ -140,15 +140,11 @@
   <ItemGroup>
     <Content Include="App\main.js" />
     <Content Include="App\viewmodels\vehiclePrototype.js" />
-    <Content Include="App\viewmodels\deferred.js" />
     <Content Include="App\viewmodels\vehicleVm.js" />
     <Content Include="App\viewmodels\vehicleSelf.js" />
-    <Content Include="App\viewmodels\observables.js" />
     <Content Include="App\views\vehiclePrototype.html" />
     <Content Include="App\views\vehicleSelf.html" />
     <Content Include="App\views\vehicleVm.html" />
-    <Content Include="App\views\deferred.html" />
-    <Content Include="App\views\observables.html" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\welcome.js" />
     <Content Include="App\views\detail.html" />

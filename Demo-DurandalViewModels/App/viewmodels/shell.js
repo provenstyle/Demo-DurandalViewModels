@@ -11,9 +11,7 @@
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
                 { route: 'vehicleVm', moduleId: 'viewmodels/vehicleVm', nav: true },
                 { route: 'vehicleSelf', moduleId: 'viewmodels/vehicleSelf', nav: true },
-                { route: 'vehiclePrototype', moduleId: 'viewmodels/vehiclePrototype', nav: true },
-                { route: 'deferred', moduleId: 'viewmodels/deferred', nav: true },
-                { route: 'observables', moduleId: 'viewmodels/observables', nav: true }
+                { route: 'vehiclePrototype', moduleId: 'viewmodels/vehiclePrototype', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();
