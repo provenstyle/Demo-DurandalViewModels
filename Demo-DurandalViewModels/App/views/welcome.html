@@ -1,8 +1,24 @@
 ﻿<section>
-    <h2 data-bind="html:displayName"></h2>
-    <blockquote data-bind="html:description"></blockquote>
-    <h3>Approaches</h3>
-    <ul data-bind="foreach: features">
-        <li data-bind="html: $data"></li>
-    </ul>
+   <h2>Building javaScript View Models</h2>
+   <blockquote>
+      There are many different ways to create objects in javaScript but which one is best when you are creating your durandal viewModels?
+   </blockquote>
+
+   <h3>The observable plugin does not work with the revealing module pattern</h3>
+   <ul>
+      <li>The main reason it does not work is that the revealing module pattern returns an object literal</li>
+      <li>It is the properties of the object literal that are made observable not the variables inside modules closure</li>
+      <li>Variables in the modules closure become the values of the observable and not the observables themself</li>
+      <li>Functions inside the module continue to modify the variables inside the observable, but the updates do not go throught the observables themselves
+         therefore anything bound to the view model does not get updated.
+      </li>
+   </ul>
+
+   <h3>Patterns that do work</h3>
+   <ul>
+      <li>Single object</li>
+      <li>A constructor function with self = this</li>
+      <li>Prototype Pattern</li>
+      <li>Revealing Prototype Pattern</li>
+   </ul>
 </section>
